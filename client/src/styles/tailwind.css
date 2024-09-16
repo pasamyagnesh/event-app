@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.char {
+  transform: translateY(115px);
+  transition: transform .5s;
+}
+
+
+.clip-path-polygon {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+body {
+    @apply bg-pearl; /* Replace 'twitter' with your desired Tailwind color */
+  }  
+
+  .boxxx{
+    width:50vw;
+    height:50vh;
+    background-image:repeating-linear-gradient(45deg, red, red 30px, blue 30px, blue 40px);
+
+
+  }
+  
+  .boxxx{
+    width : 400px;
+    height:400px;
+    margin-top:50px;
+   
+    //border-radius: 50%;
+   
+    /* background-image:repeating-linear-gradient(90deg,red 35%,blue 50%); */
+    background-image:repeating-radial-gradient(closest-side at 100px 100px ,darkorange 30%,yellow 60%);
+
+  }
+
+  .gradient{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    margin:15px;
+
+  }
+
+
+  .gradient--one{
+    background-image: conic-gradient(from 45deg, red,blue);
+  }
+  .gradient--two{
+    background-image: conic-gradient(red,blue);
+  }
+  .gradient--three{
+    background-image: conic-gradient(red,blue,yellow,green);
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .border-gradient {
+    background: conic-gradient(
+      from 0deg,
+      #ff0052,
+      #ffd700,
+      #00ff00,
+      #00ffff,
+      #0000ff,
+      #ff00ff,
+      #ff0052
+    );
+    animation: rotate 5s linear infinite;
+  }
+  
+
+
+
+
+@layer utilities {
+  /* Act as a border */
+  .card-wrapper {
+    @apply relative  overflow-hidden rounded-2xl bg-gradient-to-b from-slate-700 to-slate-800;
+  }
+
+  /* Gradient */
+  .card-wrapper::before {
+    background: conic-gradient(
+      #FFC0CB 20deg,
+      transparent 80deg
+    );
+
+    @apply absolute  top-[-25%] left-[-25%] h-[150%] w-[150%] animate-border-spin   content-[''];
+  }
+
+  /* Body */
+  .card-content {
+    @apply absolute left-[2px] top-[2px]   h-[calc(100%-3px)] w-[calc(100%-3px)] rounded-2xl bg-gradient-to-b from-blue-950 to-blue-900;
+  }
+}
+
+
+
+@font-face {
+  font-family: 'AmericanCaptain-MdEY';
+  src: url('./fonts/AmericanCaptain-MdEY.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'WallingtonRegular-PYK7';
+  src: url('./fonts/WallingtonRegular-PYK7.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Dubiel';
+  src: url('./fonts/Dubiel.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DubielItalic';
+  src: url('./fonts/DubielItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MarvelRegular-Dj83';
+  src: url('./fonts/MarvelRegular-Dj83.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Vogue';
+  src: url('./fonts/Vogue.ttf') format('truetype');
+}
+
+
+
