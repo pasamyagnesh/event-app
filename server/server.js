@@ -15,7 +15,8 @@ const eventData = {
     },
     {
       eventName: "Paper Presentation",
-      topics: "Internet of Things, Renewable Energy, Sustainable Development, Healthcare Policy and Management, Financial Markets and Investment",
+      topics: "1. Soft copy of paper with complete details of students (Name, Reg No, Branch, College Name, Location, Mail-id, Phone number) and PPT should be sent to (cse.epi24@aliet.ac.in) 2. Maximum of two authors per paper. 3. Presentation time should be (8 Min) and Queries (2 Min) in total 10 Min. 4. Full Length paper should be submitted in word file not more than 10 pages. (Abstract should be specified clearly).",
+      
       prize: "7000/- Prize money",
       winners: "-",
       coordinators: "V.Harsha vardhan, P.Yagnesh, P.Siddardh"
@@ -25,7 +26,7 @@ const eventData = {
       topics: "Data Structures, Algorithms, Competitive Programming",
       prize: "8000/- Prize money",
       winners: "-",
-      coordinators: "N.Sravan Kumar, T.Suresh"
+      coordinators: "Dr. B AshaLatha , Mrs P.Nancy Anurag, Mrs K. Neeharika, Mr.N. Vijay Kumar, Mrs N.V.L Manaswini"
     },
     {
       eventName: "Hackathon",
